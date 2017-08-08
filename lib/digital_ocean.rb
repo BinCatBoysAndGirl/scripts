@@ -14,7 +14,7 @@ module DigitalOcean
     File.read(path).chomp
   end
 
-  def DigitalOcean.create_droplet(name)
+  def self.create_droplet(name)
     begin
       RestClient.post(
 	"#{endpoint}/droplets",
